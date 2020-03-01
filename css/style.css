@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+body {
+  font-family: 'Roboto';
+}
+
+h4 {
+  font-size: 25px;
+  font-weight: 500;
+  font-stretch: normal;
+}
+
+.personal_info .order_summary {
+  height: 100vh;
+}
+
+.ship_payment {
+  height: auto;
+  min-height: 100vh;
+}
+
+.grid {
+  width: 100%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid div {
+  padding: 0 .5em;
+}
+
+input[type=radio] {
+  height: 23px;
+  width: 23px;
+}
+
+input[type=checkbox] {
+  width: 16px;
+  height: 16px;
+  margin-right: 1em;
+}
+
+input[type=text] {
+  padding: 10px;
+  padding-right: 60px;
+  border: none;
+}
+
+.form_checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form_checkbox span {
+  margin-top: 0.3em;
+  font-weight: bold;
+  color: #717171;
+  font-size: 17.6px;
+  padding-left: 0.4em;
+}
+
+/* CSS to first column */
+.personal_info {
+  color: #212121;
+}
+
+.personal_info p:nth-child(2) {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 0.2em;
+}
+
+.personal_info p:nth-child(4) {
+  color: #717171;
+  font-size: 17.6px;
+  padding-left: 2.4em;
+  margin: 0;
+  font-stretch: normal;
+  width: 80%;
+}
+
+.personal_info p:nth-child(5) {
+  margin-top: 4em;
+  font-size: 18px;
+  color: #969696;
+  font-weight: normal;
+}
+
+.personal_info span:nth-child(7) {
+  font-weight: bold;
+  font-size: 13.8px;
+  color: #717171;
+}
+
+.personal_info hr {
+  margin: 2em 0;
+}
+
+.personal_info button {
+  background-color: #c6c6c6;
+  color: white;
+  height: 50px;
+  width: 160px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+
+.ship_payment {
+  border-right: 1px solid lightgray;
+  border-left: 1px solid lightgray;
+}
+
+.ship_payment .ship {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ship_payment .ship p {
+  color: #717171;
+  font-size: 13px;
+  margin-left: 1.4em;
+  margin-top: 0;
+}
+
+.ship_payment .form_checkbox input {
+  margin-left: -22px;
+}
+
+.ship_payment .form_checkbox span {
+  font-size: 16px;
+  color: #717171;
+}
+
+.ship_payment span {
+  color: #29b6f6;
+  font-weight: bold;
+  margin-top: 0.2em;
+}
+
+.ship_payment .store span {
+  color: #c6c6c6;
+  font-size: 16px;
+}
+
+.ship_payment button {
+  width: 49px;
+  height: 20px;
+  background-color: #45b347;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+.ship_payment .pay span:nth-child(1) {
+  color: #c6c6c6;
+  font-size: 18px;
+  margin-left: -5px;
+}
+
+.ship_payment .pay span:nth-child(2) {
+  color: #29b6f6;
+  font-size: 18px;
+  padding-bottom: .3em;
+  border-bottom: 1px solid #29b6f6;
+}
+
+.ship_payment .payment_form {
+  margin-top: 2em;
+  margin-left: -15px;
+}
+
+.ship_payment .payment_form label {
+  font-size: 18px;
+}
+
+.ship_payment .payment_form input {
+  margin-top: 0.2em;
+  margin-bottom: 1.5em;
+  border-radius: 5px;
+  border: 1px solid #c6c6c6;
+  height: 44px;
+  font-size: 16px;
+  color: #b3b3b3;
+  padding: 0em 0.4em;
+}
+
+.ship_payment .payment_form select {
+  padding: 0.5em;
+  margin-left: -8px;
+  width: 173px;
+  height: 40px;
+  font-size: 16px;
+  color: #b3b3b3;
+  border: 1px solid #c6c6c6;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("../imgs/select02.svg") white no-repeat 97% !important;
+}
+
+ul li {
+  list-style: none;
+  margin-left: -20px;
+  border-top: 1px solid #d2d2d2;
+  height: 60px;
+}
+
+ul li span {
+  padding: 12px;
+}
+
+ul li:last-child {
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.form_input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.submit {
+  display: inline-block;
+  position: relative;
+}
+
+.submit input[type=text] {
+  width: 400px !important;
+}
+
+.submit .btn {
+  padding: 2px;
+  position: absolute;
+  width: 100px;
+  right: 8px;
+  top: 21px;
+  height: 46px !important;
+  background-color: black;
+  color: white !important;
+  border: none !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+.due_date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 2em;
+}
+
+.due_date label {
+  margin-left: -6px;
+}
+
+.due_date .year_input {
+  margin-right: -5px;
+}
+
+.value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    display: block;
+  }
+}
+/*# sourceMappingURL=style.css.map */

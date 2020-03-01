@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="grid">
+        <div class="personal_info">
+            <h4>01 INFORMAÇÕES PESSOAIS</h4>
+            <p>Dados de cobrança</p>
+            
+            <div class="form_checkbox">
+                <input type="radio" checked/><span>Sérgio Dias</span>
+            </div>
+
+            <p> Rua Juscelino Macário Andrade Filho, 
+                n° 15789 - Bairro Monte do Santo Alto
+                Rio Grande do Sul/ RS <br>
+                CEP: 62700-000 <br>
+                <br>
+                Telefone fixo: (xx) xxxxxxxxx <br>
+                Telefone celular: (xx) xxxxxxxx</p>
+
+            <p>Endereço de entrega</p>
+            <input type="checkbox" checked><span>Entregar para o mesmo endereço</span>
+            <hr>
+            <button>Novo Endereço</button>
+        </div>
+
+        <div class="ship_payment">
+            <h4>02 FORMA DE ENVIO</h4>
+            <div class="ship">
+                <div>
+                    <div class="form_checkbox">
+                        <input type="radio" checked /><span>Padrão</span>
+                    </div>
+                    <p>7 a 8 dias úteis*</p>
+                    <p>Após a confirmação do pagamento</p>
+                </div>
+                <span>R$14,90</span>
+            </div>
+            <div class="ship store">
+                <div>
+                    <div class="form_checkbox">
+                        <input type="radio" id="padrao" name="padrao" /><span>Retirar na loja</span>
+                    </div>
+                    <p>2 a 4 dias úteis*</p>
+                </div>
+                <button>Grátis</button>
+            </div>
+
+            <h4>03 FORMA DE PAGAMENTO</h4>
+            <div class="ship pay">
+                <span>Pague na entrega</span>
+                <span>Pague online</span>
+            </div>
+            <div class="payment_form">
+                <div class="form_input">
+                    <label for="nome_titular">Nome do titular*</label>
+                    <input type="text" name="nome_titular" placeholder="Como está no cartão">
+                </div>
+                
+                <div class="form_input">
+                    <label for="nome_titular">Número do cartão de crédito*</label>
+                    <input type="text" name="nome_titular" placeholder="XXXX XXXX XXXX XXXX">
+                </div>
+                
+                <div class="due_date">
+                    <div class="month_input">
+                        <label for="month">Mês</label>
+                        <br>
+                        <select name="month" id="month">
+                            <option value="Selecione">Selecione</option>
+                        </select>
+                    </div>
+                    <div class="year_input">
+                        <label for="year">Ano</label>
+                        <br>
+                        <select name="year" id="year">
+                            <option value="Selecione">Selecione</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form_input">
+                    <label for="cvv">CVV(São os 3 números atrás do cartão)*</label>
+                    <input type="text" name="cvv" placeholder="CVV">
+                </div>
+                <ul>
+                    <li>
+                        <div class="form_checkbox">
+                            <input type="radio" /><span><img src="imgs/paypal.jpg" alt=""></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form_checkbox">
+                            <input type="radio" /><span><img src="imgs/picpay.jpg" alt=""></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form_checkbox">
+                            <input type="radio" /><span>Cartão de débito</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form_checkbox">
+                            <input type="radio" /><span>PayPal</span>
+                        </div>
+                    </li>
+                    
+                </ul>
+                
+                <div class="form_input submit">
+                    <label for="cupom">Inserir cupom de desconto</label>
+                    <input type="text" name="cupom" placeholder="ex: BRFEK30">
+                    <input class="btn" type="button" value="Aplicar">
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="order_summary">
+            <h4>04 RESUMO DO PEDIDO</h4>
+            <button>CONCLUIR COMPRA</button>
+
+            <div class="products">
+                <ul>
+                    <li>
+                        Lavadora
+                    </li>
+                    <li>
+                        Celular
+                    </li>
+                    <li>
+                        Smartphone
+                    </li>
+                </ul>
+            </div>
+            
+            <input type="text">
+            <button>enviar</button>
+
+            <div class="total">
+                <div class="item">(1002 itens) estão no seu carrinho</div>
+                <div class="item value">
+                    <span>Sub-total</span>
+                    <span>R$ 22.145,83</span>
+                </div>
+                <div class="item value">
+                    <span>Frete</span>
+                    <span>R$ 54,31</span>
+                </div>
+                <div class="item value">
+                    <span>Desconto de:</span>
+                    <span>R$ 19,90</span>
+                </div>
+                <div class="item value">
+                    <span>Total</span>
+                    <span>
+                        R$ 191,870,00
+                        <br>
+                        em até 10x s/juros
+                    </span>
+                </div>
+
+                <button>CONCLUIR COMPRA</button>
+                <p>ATENÇÃO: Verifique sempre o prazo de entrega</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
