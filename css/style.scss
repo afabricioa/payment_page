@@ -2,12 +2,22 @@
 
 body{
     font-family: 'Roboto';
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
 }
 
 h4{
     font-size: 25px;
     font-weight: 500;
     font-stretch: normal;
+}
+
+.logo{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    border-bottom: 1px solid #b3b3b3;
 }
 
 .personal_info .order_summary{
@@ -21,7 +31,7 @@ h4{
 
 .grid{
     width: 100%;
-    margin: 0 auto;
+    margin: 2em auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -58,7 +68,7 @@ input[type=text] {
         padding-left: 0.4em;
 }
 
-/* CSS to first column */
+/* CSS to first section of the page*/
 
 .personal_info{
     color: #212121;
@@ -74,7 +84,7 @@ input[type=text] {
         padding-left: 2.4em;
         margin: 0;
         font-stretch: normal;
-        width: 80%;
+        width: 75%;
     }
 
     p:nth-child(5){
@@ -105,6 +115,7 @@ input[type=text] {
     }
 }
 
+/* CSS to second section of the page*/
 
 .ship_payment{
     border-right: 1px solid lightgray;
@@ -187,7 +198,7 @@ input[type=text] {
         select{
             padding: 0.5em;
             margin-left: -8px;
-            width: 173px;
+            width: 170px;
             height: 40px;
             font-size: 16px;
             color: #b3b3b3;
@@ -198,74 +209,245 @@ input[type=text] {
          
             background: url("../imgs/select02.svg") white no-repeat 97% !important;
         }
+
+        ul li{
+            list-style: none;
+            margin-left: -20px;
+            border-top: 1px solid #d2d2d2;
+            height: 60px;
+            
+            span{
+                padding: 12px;
+            }
+            
+        }
+        
+        ul li:last-child{
+            border-bottom: 1px solid #d2d2d2;
+        }
+
+    }
+
+    .form_input{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .submit{
+        display: inline-block;
+        position: relative;
+    
+        input[type=text]{
+            width: 400px !important;
+        }
+        .btn{
+            padding: 2px;
+            position: absolute;
+            width: 100px;
+            right: 8px;
+            top: 21px;
+            height: 46px !important;
+            background-color: black;
+            color: white !important;
+            border: none !important;
+            border-top-left-radius: 0 !important;
+            border-bottom-left-radius: 0 !important;
+        }
+    }
+
+    .due_date{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2em;
+    
+        label{
+            margin-left: -6px;
+        }
+        .year_input{
+            margin-right: -5px;
+        }
+    
+        
     }
 }
 
-ul li{
-    list-style: none;
-    margin-left: -20px;
-    border-top: 1px solid #d2d2d2;
-    height: 60px;
-    
-    span{
-        padding: 12px;
-    }
-    
-}
+/* CSS to third section of the page*/
 
-ul li:last-child{
-    border-bottom: 1px solid #d2d2d2;
-}
-
-.form_input{
+.order_summary{
     display: flex;
+    align-content: center;
     flex-direction: column;
-}
-
-.submit{
-    display: inline-block;
-    position: relative;
-
-    input[type=text]{
-        width: 400px !important;
-    }
-    .btn{
-        padding: 2px;
-        position: absolute;
-        width: 100px;
-        right: 8px;
-        top: 21px;
-        height: 46px !important;
-        background-color: black;
-        color: white !important;
-        border: none !important;
-        border-top-left-radius: 0 !important;
-        border-bottom-left-radius: 0 !important;
-    }
-}
-
-.due_date{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2em;
-
-    label{
-        margin-left: -6px;
-    }
-    .year_input{
-        margin-right: -5px;
-    }
-
     
+    .message{
+        position: relative;
+        display: inline;
+
+        input[type=text]{
+            width: 99%;
+            border: 1px solid #e1e1e1;
+            height: 50px;
+            border-radius: 5px;
+            padding: 5px;
+        }
+    
+        input[type=button]{
+            position: absolute;
+            background-color: black;
+            width: 67px;
+            height: 25px;
+            top: 32px;
+            right: 3px;
+            font-stretch: 15px;
+            border-radius: 30px;
+            color: white;
+            border: none;
+        }
+    }
+    
+
+
+    button{
+        text-align: center;
+        background-color: #00ab54;
+        height: 49px;
+        margin: 0 5%;
+        color: white;
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .products{
+        margin: 2em 0;
+        border: 1px solid #e1e1e1;
+        border-radius: 5px;
+        max-height: 250px;
+        overflow: scroll;
+    }
+
+    ul{
+        list-style: none;
+        padding: 0.5em 0.5em;
+    }
+    ul li{
+        display: flex;
+        min-height: 75px;
+        height: auto;
+        border-bottom: 1px solid #e1e1e1;
+
+        img:last-child{
+            width: 64px;
+            height: 64px;
+        }
+        .description{
+            font-size: 13px;
+            letter-spacing: normal;
+            text-align: left;
+
+            .specs{
+                display: flex;
+                flex-direction: row !important;
+                justify-content: space-between;
+                margin-top: 25px;
+                margin-left: -5px;
+
+                span{
+                    font-size: 15px;
+                    letter-spacing: -0.72px;
+                    font-weight: medium;
+                    line-height: 13px;
+                }
+
+                span:not(:last-child){
+                    font-size: 12px;
+                    color: #969696;
+                }
+            }
+        }
+    }
+
+    .total{
+        margin-top: 1em;
+        background-color: #f7f7f7;
+        border-radius: 5px;
+        text-align: center;
+
+        p{
+            font-size: 14px;
+            color: #717171;
+            padding: 1em;
+        }
+
+        .item{
+            display: flex;
+            justify-content: space-between;
+
+            height: 60px;
+            border-top: 1px solid #cacaca;
+            
+            span{
+                padding: 1.2em 0;
+                font-size: 18px;
+                color: #717171;
+            }
+        }
+        div:nth-child(5){
+            span{
+                font-size: 25px;
+                font-weight: bold;
+                color: #212121;
+            }
+            padding-bottom: 2em;
+            border-bottom: 1px solid #cacaca;
+            margin-bottom: 2em;
+
+            .obs{
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+
+                p{
+                    padding: 0;
+                    margin-right: -35px;
+                    margin-top: -30px;
+                }
+            }
+        }
+
+        button{
+            text-align: center;
+            background-color: #00ab54;
+            height: 49px;
+            width: 95%;
+            margin: 0;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+        }
+    }
 }
 
-.value{
-    display: flex;
-    justify-content: space-between;
-}
+
 
 @media(max-width: 600px){
     .grid{
         display: block;
+    }
+
+    .due_date{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+
+    .submit{
+        input[type=text]{
+            width: 300px !important;
+        }
+
+        .btn{
+            right: 17px;
+        }
     }
 }

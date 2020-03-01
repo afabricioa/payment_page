@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Página de Pagamento</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="logo">
+        <img src="imgs/logo_preto.jpg" alt="">
+    </div>
+    
     <div class="grid">
         <div class="personal_info">
             <h4>01 INFORMAÇÕES PESSOAIS</h4>
@@ -106,7 +110,7 @@
                     </li>
                     <li>
                         <div class="form_checkbox">
-                            <input type="radio" /><span>PayPal</span>
+                            <input type="radio" /><span>Boleto</span>
                         </div>
                     </li>
                     
@@ -128,42 +132,70 @@
             <div class="products">
                 <ul>
                     <li>
-                        Lavadora
+                        <div class="image"><img src="imgs/lavar.jpg" alt=""></div>
+                        <div class="description">
+                            Lavadora Samsung 10 kg Seine com centrifugação secagem rápida...
+                            <div class="specs">
+                                <span>Voltagem: 110V</span>
+                                <span>Qtd: 02</span>
+                                <span>R$103.799,80</span>
+                            </div>
+                        </div>
                     </li>
                     <li>
-                        Celular
+                        <div class="image"><img src="imgs/findx.jpg" alt=""></div>
+                        <div class="description">
+                            smartphone vivo find x com tela de 6 polegadas snapdragon 855, gorilla glass 5...
+                            <div class="specs">
+                                <span></span>
+                                <span>Qtd: 02</span>
+                                <span>R$3.799,80</span>
+                            </div>
+                        </div>
                     </li>
                     <li>
-                        Smartphone
+                        <div class="image"><img src="imgs/sofa.jpg" alt=""></div>
+                        <div class="description">
+                            smartphone vivo find x com tela de 6 polegadas snapdragon 855, gorilla glass 5...
+                            <div class="specs">
+                                <span></span>
+                                <span>Qtd: 01</span>
+                                <span>R$3.799,80</span>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
             
-            <input type="text">
-            <button>enviar</button>
+            <div class="message">
+                <input type="text" placeholder="escreva uma mensagem para a gente">
+                <input type="button" value="enviar">
+            </div>
 
             <div class="total">
-                <div class="item">(1002 itens) estão no seu carrinho</div>
-                <div class="item value">
+                <p>(1002 itens) estão no seu carrinho</p>
+                <div class="item">
                     <span>Sub-total</span>
                     <span>R$ 22.145,83</span>
                 </div>
-                <div class="item value">
+                <div class="item">
                     <span>Frete</span>
                     <span>R$ 54,31</span>
                 </div>
-                <div class="item value">
+                <div class="item">
                     <span>Desconto de:</span>
                     <span>R$ 19,90</span>
                 </div>
-                <div class="item value">
+                <div class="item">
                     <span>Total</span>
-                    <span>
-                        R$ 191,870,00
-                        <br>
-                        em até 10x s/juros
-                    </span>
+                    <div class="obs">
+                        <span>
+                            R$ 191.870,00
+                        </span>
+                        <p>em até 10x s/juros</p>
+                    </div>
                 </div>
+                
 
                 <button>CONCLUIR COMPRA</button>
                 <p>ATENÇÃO: Verifique sempre o prazo de entrega</p>
